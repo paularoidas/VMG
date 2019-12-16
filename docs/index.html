@@ -1,0 +1,24 @@
+<?php
+session_start();
+define('ROOT_PATH', dirname(dirname(__FILE__)));
+
+$page = isset($_GET['page']) ? $_GET['page'] : FALSE;
+
+switch ($page) {
+	case 'vmg' :
+		require ROOT_PATH . '/src/vmg.php';
+		break;
+
+	case 'sak':
+		require ROOT_PATH . '/src/sak.php';
+		break;		
+
+    case 'output':
+        require ROOT_PATH . '/src/output.php';
+        break;	
+        
+	default:
+		require ROOT_PATH . '/src/vmg.php';
+        break;
+	}
+?>

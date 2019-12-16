@@ -21,10 +21,10 @@
 	
 	<ul class="nav nav-tabs">
   <li class="nav-item">
-    <a class="nav-link active" href="vmg.php">Default Schedule</a>
+    <a class="nav-link active" href="/?page=vmg">Default Schedule</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="sak.php">Custom Schedule</a>
+    <a class="nav-link" href="/?page=sak">Custom Schedule</a>
   </li>
   <!-- <li class="nav-item">
     <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
@@ -33,7 +33,7 @@
 	<div class='container-fluid'>
 		<div class='row'>
 			<div class='col-sm pt-4'>
-				<form method='GET' action='output.php'>
+				<form method='GET' action='/?page=output'>
 					<div class='form-group'>
 						<div class='form-row'>
 							<label for='exampleInputEmail1'>Start Date</label>
