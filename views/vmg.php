@@ -6,7 +6,7 @@
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
 
-    <link rel='icon' href='/vmg/favicon.ico' type='image/x-icon'/>
+    <link rel='icon' href='/favicon.ico' type='image/x-icon'/>
     <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'
         integrity='sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh' crossorigin='anonymous'>
 
@@ -143,17 +143,9 @@
         integrity='sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6' crossorigin='anonymous'>
     </script>
     <footer class="page-footer font-small pt-4">
-
-
         <div class="container fixed-bottom text-center text-md-left">
-
-
-
-
-            <div class="footer-copyright text-center text-black-50 py-3">made by Paulius Stasius</a>
+            <div class="footer-copyright text-center text-black-50 py-3">Written by Paulius Stasius. <a href="mailto:paulius.stasius@vmg.eu">Report a problem.</a>.
             </div>
-
-
     </footer>
 </body>
 

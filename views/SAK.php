@@ -6,7 +6,7 @@
 	<meta charset='utf-8'>
 	<meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
 
-	<link rel='icon' href='/vmg/favicon.ico' type='image/x-icon'/>
+	<link rel='icon' href='/favicon.ico' type='image/x-icon' />
 	<link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'
 		integrity='sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh' crossorigin='anonymous'>
 
@@ -14,13 +14,14 @@
 </head>
 
 <body>
-<header class='bg-light'>
-    <div class='pb-3 ml-2 '>
-        <h1>OEE Shift Schedule Generator</h1>
-        <a><span class=' font-weight-bold'>INSTRUCTIONS:</span><br> Fill out the form, press Generate, select all, copy, then paste the results into an Excel
-            sheet and save the file as a .csv file format.</a>
-    </div>
-    </header>
+	<header class='bg-light'>
+		<div class='pb-3 ml-2 '>
+			<h1>OEE Shift Schedule Generator</h1>
+			<a><span class=' font-weight-bold'>INSTRUCTIONS:</span><br> Fill out the form, press Generate, select all,
+				copy, then paste the results into an Excel
+				sheet and save the file as a .csv file format.</a>
+		</div>
+	</header>
 	<ul class="nav nav-tabs bg-light">
 		<li class="nav-item">
 			<a class="nav-link" href="/?page=vmg">8-Shift</a>
@@ -42,16 +43,16 @@
 					<div class='form-group'>
 						<div class='form-row'>
 							<div class='col'>
-							<label for='exampleInputField1'>Start Date</label>
-							<input type='date' class='form-control' id='StartDate' aria-describedby=''
-								placeholder='2020-01-01' name='StartDate' value='2020-01-01' required>
+								<label for='exampleInputField1'>Start Date</label>
+								<input type='date' class='form-control' id='StartDate' aria-describedby=''
+									placeholder='2020-01-01' name='StartDate' value='2020-01-01' required>
+							</div>
+							<div class='col'>
+								<label for='exampleInputField1'>End Date</label>
+								<input type='date' class='form-control' id='EndDate' aria-describedby=''
+									placeholder='2021-01-01' name='EndDate' value='2021-01-01' required>
+							</div>
 						</div>
-					<div class='col'>
-						<label for='exampleInputField1'>End Date</label>
-						<input type='date' class='form-control' id='EndDate' aria-describedby=''
-							placeholder='2021-01-01' name='EndDate' value='2021-01-01' required>
-					</div>
-					</div>
 					</div>
 					<div class='form-group'>
 						<div class='form-row'>
@@ -68,18 +69,18 @@
 						</div>
 					</div>
 					<div class='form-group'>
-					<div class='form-row'>
+						<div class='form-row'>
 							<div class='col'>
-						<label for='exampleInputField1'>Day Shift Name</label>
-						<input type='text' class='form-control' id='DayShift' aria-describedby=''
-							placeholder='Dienine pamaina' name='DayShift' value='Dienine pamaina'>
-					</div>
-					<div class='col'>
-						<label for='exampleInputField1'>Night Shift Name</label>
-						<input type='text' class='form-control' id='NightShift' aria-describedby=''
-							placeholder='Naktine pamaina' name='NightShift' value='Naktine pamaina'>
-					</div>
-					</div>
+								<label for='exampleInputField1'>Day Shift Name</label>
+								<input type='text' class='form-control' id='DayShift' aria-describedby=''
+									placeholder='Dienine pamaina' name='DayShift' value='Dienine pamaina'>
+							</div>
+							<div class='col'>
+								<label for='exampleInputField1'>Night Shift Name</label>
+								<input type='text' class='form-control' id='NightShift' aria-describedby=''
+									placeholder='Naktine pamaina' name='NightShift' value='Naktine pamaina'>
+							</div>
+						</div>
 					</div>
 					<label for='exampleInputField1'>Shift Pattern</label>
 					<div class='form-group'>
@@ -149,7 +150,7 @@
 			</div>
 			<div class='col-sm'>
 			</div>
-			
+
 		</div>
 	</div>
 	<!-- Optional JavaScript -->
@@ -165,7 +166,8 @@
 	</script>
 	<footer class="page-footer font-small pt-4">
 		<div class="container fixed-bottom text-center text-md-left">
-			<div class="footer-copyright text-center text-black-50 py-3">made by Paulius Stasius</a>
+			<div class="footer-copyright text-center text-black-50 py-3">Written by Paulius Stasius. <a
+					href="mailto:paulius.stasius@vmg.eu">Report a problem.</a>.
 			</div>
 	</footer>
 </body>

@@ -4,11 +4,11 @@ define('ROOT_PATH', dirname(__FILE__));
 $page = isset($_GET['page']) ? $_GET['page'] : FALSE;
 
 switch ($page) {
-	case 'vmg' :
+	case 'vmg':
 		require ROOT_PATH . '/views/vmg.php';
 		break;
 
-	case 'vmg2' :
+	case 'vmg2':
 		require ROOT_PATH . '/views/vmg2.php';
 		break;
 
