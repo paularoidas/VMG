@@ -1,6 +1,6 @@
 <?php
 session_start();
-define('ROOT_PATH', dirname(dirname(__FILE__)));
+define('ROOT_PATH', dirname((__FILE__));
 $page = isset($_GET['page']) ? $_GET['page'] : FALSE;
 
 switch ($page) {
