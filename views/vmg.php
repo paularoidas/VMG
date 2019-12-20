@@ -147,7 +147,7 @@
     <footer class="page-footer font-small pt-4">
         <div class="container fixed-bottom text-center text-md-left">
             <div class="footer-copyright text-center text-black-50 py-3">Written by Paulius Stasius. <a
-                    href="mailto:paulius.stasius@vmg.eu">Report a problem</a>.
+                    href="mailto:paulius.stasius@vmg.eu">Report a problem.</a>
             </div>
     </footer>
 </body>
