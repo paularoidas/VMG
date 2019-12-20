@@ -1,20 +1,20 @@
 <?php
-$begin = new DateTime($_GET['StartDate']);
-$end = new DateTime($_GET['EndDate']);
-$startTime = $_GET['StartTime'];
-$endTime = $_GET['EndTime'];
+$begin = new DateTime($_POST['StartDate']);
+$end = new DateTime($_POST['EndDate']);
+$startTime = $_POST['StartTime'];
+$endTime = $_POST['EndTime'];
 // $computerName = array('SAK-OEE-DC203', 'SAK-OEE-DC206', 'SAK-OEE-DC411', 'SAK-OEE-DC455');
-$dayShift = $_GET['DayShift'];
-$nightShift = $_GET['NightShift'];
+$dayShift = $_POST['DayShift'];
+$nightShift = $_POST['NightShift'];
 $team = array(
-	$_GET['Shift1'],
-	$_GET['Shift2'],
-	$_GET['Shift3'],
-	$_GET['Shift4'],
-	$_GET['Shift5'],
-	$_GET['Shift6'],
-	$_GET['Shift7'],
-	$_GET['Shift8'],
+	$_POST['Shift1'],
+	$_POST['Shift2'],
+	$_POST['Shift3'],
+	$_POST['Shift4'],
+	$_POST['Shift5'],
+	$_POST['Shift6'],
+	$_POST['Shift7'],
+	$_POST['Shift8'],
 );
 $command1 = '[update]';
 $command2 = '[end]';

@@ -1,14 +1,28 @@
 <?php
-$begin = new DateTime('2020-01-01');
-$end = new DateTime('2022-01-01');
-$startTime = "08:30:00";
-$endTime = "20:30:00";
+$begin = new DateTime($_POST['StartDate']);
+$end = new DateTime($_POST['EndDate']);
+$startTime = $_POST['StartTime'];
+$endTime = $_POST['EndTime'];
 $computerName = array("SAK-OEE-DC203", "SAK-OEE-DC206", "SAK-OEE-DC411", "SAK-OEE-DC455");
 $computername1 =array("SAK-OEE-DC501", "SAK-OEE-DC503", "SAK-OEE-DC522", "SAK-OEE-DC608", "SAK-OEE-DC614", "SAK-OEE-DC620", "SAK-OEE-DC621", "SAK-OEE-DC624");
-$dayShift = 'Dienine pamaina';
-$nightShift = 'Naktine pamaina';
-$team = array('C','D','B','C','A','B','D','A');
-$team1 =array('L02','L01','L01', 'L02');
+$dayShift = $_POST['DayShift'];
+$nightShift = $_POST['NightShift'];
+$team = array(
+	$_POST['Shift1'],
+	$_POST['Shift2'],
+	$_POST['Shift3'],
+	$_POST['Shift4'],
+	$_POST['Shift5'],
+	$_POST['Shift6'],
+	$_POST['Shift7'],
+	$_POST['Shift8'],
+);
+$team1 =array(
+	$_POST['Shift9'],
+	$_POST['Shift10'],
+	$_POST['Shift11'],
+	$_POST['Shift12'],
+);
 $command1 = '[update]';
 $command2 = '[end]';
 $interval = DateInterval::createFromDateString('1 day');

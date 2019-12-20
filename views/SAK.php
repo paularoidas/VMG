@@ -6,7 +6,7 @@
 	<meta charset='utf-8'>
 	<meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
 
-
+	<link rel='icon' href='/favicon.ico' type='image/x-icon'/>
 	<link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'
 		integrity='sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh' crossorigin='anonymous'>
 
@@ -14,59 +14,72 @@
 </head>
 
 <body>
-	<header>
-		<div class='mb-3 ml-2'>
-			<h1>OEE Shift Schedule Generator</h1>
-			<a>INSTRUCTIONS:<br> Fill out the form, press Generate, select all, copy, then paste the results into an
-				Excel sheet and save them as a .csv file format.</a>
-		</div>
-	</header>
-	<ul class="nav nav-tabs">
+<header class='bg-light'>
+    <div class='pb-3 ml-2 '>
+        <h1>OEE Shift Schedule Generator</h1>
+        <a><span class=' font-weight-bold'>INSTRUCTIONS:</span><br> Fill out the form, press Generate, select all, copy, then paste the results into an Excel
+            sheet and save the file as a .csv file format.</a>
+    </div>
+    </header>
+	<ul class="nav nav-tabs bg-light">
 		<li class="nav-item">
-			<a class="nav-link" href="/index.html">Default Schedule</a>
+			<a class="nav-link" href="/?page=vmg">8-Shift</a>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link active" href="/sak.php">Custom Schedule</a>
+			<a class="nav-link" href="/?page=vmg2">16-Shift</a>
 		</li>
-		<!-- <li class="nav-item">
-    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-  </li> -->
+		<li class="nav-item">
+			<a class="nav-link active" href="/?page=sak">Sakuona</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="/?page=sws">Swoods</a>
+		</li>
 	</ul>
 	<div class='container-fluid'>
 		<div class='row'>
 			<div class='col-sm pt-4'>
-				<form method='GET' action='/output_sak.php'>
+				<form method='POST' action='/?page=output_sak'>
 					<div class='form-group'>
 						<div class='form-row'>
+							<div class='col'>
 							<label for='exampleInputField1'>Start Date</label>
 							<input type='date' class='form-control' id='StartDate' aria-describedby=''
-								placeholder='2020-01-01' name='StartDate' value='2020-01-01'>
+								placeholder='2020-01-01' name='StartDate' value='2020-01-01' required>
+						</div>
+					<div class='col'>
+						<label for='exampleInputField1'>End Date</label>
+						<input type='date' class='form-control' id='EndDate' aria-describedby=''
+							placeholder='2021-01-01' name='EndDate' value='2021-01-01' required>
+					</div>
+					</div>
+					</div>
+					<div class='form-group'>
+						<div class='form-row'>
+							<div class='col'>
+								<label for='exampleInputField1'>Day Shift Start Time</label>
+								<input type='text' class='form-control' id='StartTime' aria-describedby=''
+									placeholder='08:30:00' name='StartTime' value='08:30:00'>
+							</div>
+							<div class='col'>
+								<label for='exampleInputField1'>Night Shift Start Time</label>
+								<input type='text' class='form-control' id='EndTime' aria-describedby=''
+									placeholder='20:30:00' name='EndTime' value='20:30:00'>
+							</div>
 						</div>
 					</div>
 					<div class='form-group'>
-						<label for='exampleInputField1'>End Date</label>
-						<input type='date' class='form-control' id='EndDate' aria-describedby=''
-							placeholder='2021-01-01' name='EndDate' value='2021-01-01'>
-					</div>
-					<div class='form-group'>
-						<label for='exampleInputField1'>Day Shift Start Time</label>
-						<input type='text' class='form-control' id='StartTime' aria-describedby=''
-							placeholder='08:30:00' name='StartTime' value='08:30:00'>
-					</div>
-					<div class='form-group'>
-						<label for='exampleInputField1'>Night Shift Start Time</label>
-						<input type='text' class='form-control' id='EndTime' aria-describedby='' placeholder='20:30:00'
-							name='EndTime' value='20:30:00'>
-					</div>
-					<div class='form-group'>
+					<div class='form-row'>
+							<div class='col'>
 						<label for='exampleInputField1'>Day Shift Name</label>
 						<input type='text' class='form-control' id='DayShift' aria-describedby=''
 							placeholder='Dienine pamaina' name='DayShift' value='Dienine pamaina'>
 					</div>
-					<div class='form-group'>
+					<div class='col'>
 						<label for='exampleInputField1'>Night Shift Name</label>
 						<input type='text' class='form-control' id='NightShift' aria-describedby=''
 							placeholder='Naktine pamaina' name='NightShift' value='Naktine pamaina'>
+					</div>
+					</div>
 					</div>
 					<label for='exampleInputField1'>Shift Pattern</label>
 					<div class='form-group'>
@@ -136,8 +149,7 @@
 			</div>
 			<div class='col-sm'>
 			</div>
-			<div class='col-sm'>
-			</div>
+			
 		</div>
 	</div>
 	<!-- Optional JavaScript -->
@@ -153,7 +165,7 @@
 	</script>
 	<footer class="page-footer font-small pt-4">
 		<div class="container fixed-bottom text-center text-md-left">
-			<div class="footer-copyright text-center text-black-50 py-3">© 2019 Paulius Stasius</a>
+			<div class="footer-copyright text-center text-black-50 py-3">made by Paulius Stasius</a>
 			</div>
 	</footer>
 </body>
