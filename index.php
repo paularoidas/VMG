@@ -13,7 +13,7 @@ switch ($page) {
 		break;
 
 	case 'sak':
-		require ROOT_PATH . '/views/sak.php';
+		require ROOT_PATH . '/views/SAK.php';
 		break;
 
 	case 'sws':
