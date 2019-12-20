@@ -5,35 +5,35 @@ $page = isset($_GET['page']) ? $_GET['page'] : FALSE;
 
 switch ($page) {
 	case 'vmg' :
-		require ROOT_PATH . '/VMG/vmg.php';
+		require ROOT_PATH . '/views/vmg.php';
 		break;
 
 	case 'vmg2' :
-		require ROOT_PATH . '/VMG/vmg2.php';
+		require ROOT_PATH . '/views/vmg2.php';
 		break;
 
 	case 'sak':
-		require ROOT_PATH . '/VMG/sak.php';
+		require ROOT_PATH . '/views/sak.php';
 		break;
 
 	case 'sws':
-		require ROOT_PATH . '/VMG/sws.php';
+		require ROOT_PATH . '/views/sws.php';
 		break;		
 	case 'output':
-		require ROOT_PATH . '/VMG/output.php';
+		require ROOT_PATH . '/outputs/output.php';
 		break;
 	case 'output2':
-		require ROOT_PATH . '/VMG/output2.php';
+		require ROOT_PATH . '/outputs/output2.php';
 		break;
 	case 'output_sak':
-		require ROOT_PATH . '/VMG/output_sak.php';
+		require ROOT_PATH . '/outputs/output_sak.php';
 		break;
 
 	case 'output_sws':
-		require ROOT_PATH . '/VMG/output_sws.php';
+		require ROOT_PATH . '/outputs/output_sws.php';
 		break;
 
 	default:
-		require ROOT_PATH . '/VMG/vmg.php';
+		require ROOT_PATH . '/views/vmg.php';
         break;
     }
