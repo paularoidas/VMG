@@ -31,8 +31,10 @@ $last_index = count($team) - 1;
 $last_index1 = count($team1) -1;
 
 echo "StartDate,"."StartTime,"."Computername,"."Machinename,"."Shifttype,"."Team,"."Command"."<br>";
+
 foreach ($computerName as $cn){ 
-foreach ($period as $dt) {
+	foreach ($period as $dt) {
+		foreach($team as $t){
     $t = current($team);
 
     echo $dt->format("Y.m.d").','.$startTime.','.$cn.','.','.$dayShift.','. $t.','.$command1."<br>";
@@ -49,10 +51,12 @@ foreach ($period as $dt) {
 		next($team);
 	}
 	
+	}	
 }
 }
 foreach ($computername1 as $cn1) {
     foreach ($period as $dt) {
+		foreach($team as $t){
         $t1 = current($team1);
         echo $dt->format("Y.m.d").','.$startTime.','.$cn1.','.','.$dayShift.','. $t1.','.$command1."<br>";
 	if ($last_index1 == key($team1)) {
@@ -64,5 +68,6 @@ foreach ($computername1 as $cn1) {
     echo $dt->format("Y.m.d").','.$endTime.','.$cn1.','.','.$nightShift.','.','.$command2."<br>";
    
     }
+}
 }
 ?>
