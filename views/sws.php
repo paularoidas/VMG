@@ -59,7 +59,7 @@
                                 placeholder='08:30:00' name='StartTime' value='08:30:00'>
                         </div>
                         <div class='col'>
-                            <label for='exampleInputEmail1'>Время начала ночной смены</label>
+                            <label for='exampleInputEmail1'>Время начала ночной <br> смены</label>
                             <input type='text' class='form-control' id='EndTime' aria-describedby=''
                                 placeholder='20:30:00' name='EndTime' value='20:30:00'>
                         </div>
@@ -85,7 +85,7 @@
                                 placeholder='Дневная смена' name='DayShift' value='Дневная смена'>
                         </div>
                         <div class='col'>
-                            <label for='exampleInputEmail1'>Название ночной <br> смены</label>
+                            <label for='exampleInputEmail1'>Название ночной смены</label>
                             <input type='text' class='form-control' id='NightShift' aria-describedby=''
                                 placeholder='Ночная смена' name='NightShift' value='Ночная смена'>
                         </div>
