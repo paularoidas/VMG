@@ -85,7 +85,7 @@
                                 placeholder='Дневная смена' name='DayShift' value='Дневная смена'>
                         </div>
                         <div class='col'>
-                            <label for='exampleInputEmail1'>Название ночной смены</label>
+                            <label for='exampleInputEmail1'>Название ночной <br> смены</label>
                             <input type='text' class='form-control' id='NightShift' aria-describedby=''
                                 placeholder='Ночная смена' name='NightShift' value='Ночная смена'>
                         </div>
