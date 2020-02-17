@@ -15,9 +15,8 @@
 <header class='bg-light'>
     <div class='pb-3 ml-2 '>
         <h1>OEE Shift Schedule Generator</h1>
-        <a><span class=' font-weight-bold'>INSTRUCTIONS:</span><br> Fill out the form, press Generate, select all, copy,
-            then paste the results into an Excel
-            sheet and save the file as a unicode .txt file format. Then change file extension to .csv.</a>
+        <a><span class=' font-weight-bold'>ИНСТРУКЦИИ:</span><br>Заполните форму, нажмите Создать, скопируйте все данные в Excel, сохраните файл в unicode.txt формате и измените тип файла на .csv.
+        </a>
     </div>
 </header>
 <ul class="nav nav-tabs bg-light">
@@ -41,12 +40,12 @@
                 <div class='form-group'>
                     <div class='form-row'>
                         <div class='col'>
-                            <label for='exampleInputEmail1'>Start Date</label>
+                            <label for='exampleInputEmail1'>Дата начала</label>
                             <input type='date' class='form-control' id='StartDate' aria-describedby=''
                                 placeholder='2020-01-01' name='StartDate' value='2020-01-01' required>
                         </div>
                         <div class='col'>
-                            <label for='exampleInputEmail1'>End Date</label>
+                            <label for='exampleInputEmail1'>Дата окончания</label>
                             <input type='date' class='form-control' id='EndDate' aria-describedby=''
                                 placeholder='2021-01-01' name='EndDate' value='2021-01-01' required>
                         </div>
@@ -55,12 +54,12 @@
                 <div class='form-group'>
                     <div class='form-row'>
                         <div class='col'>
-                            <label for='exampleInputEmail1'>Day Shift Start Time</label>
+                            <label for='exampleInputEmail1'>Время начала дневной смены</label>
                             <input type='text' class='form-control' id='StartTime' aria-describedby=''
                                 placeholder='08:30:00' name='StartTime' value='08:30:00'>
                         </div>
                         <div class='col'>
-                            <label for='exampleInputEmail1'>Night Shift Start Time</label>
+                            <label for='exampleInputEmail1'>Время начала ночной смены</label>
                             <input type='text' class='form-control' id='EndTime' aria-describedby=''
                                 placeholder='20:30:00' name='EndTime' value='20:30:00'>
                         </div>
@@ -81,18 +80,18 @@
                 <div class='form-group'>
                     <div class='form-row'>
                         <div class='col'>
-                            <label for='exampleInputEmail1'>Day Shift Name</label>
+                            <label for='exampleInputEmail1'>Название дневной смены</label>
                             <input type='text' class='form-control' id='DayShift' aria-describedby=''
                                 placeholder='Дневная смена' name='DayShift' value='Дневная смена'>
                         </div>
                         <div class='col'>
-                            <label for='exampleInputEmail1'>Night Shift Name</label>
+                            <label for='exampleInputEmail1'>Название ночной смены</label>
                             <input type='text' class='form-control' id='NightShift' aria-describedby=''
                                 placeholder='Ночная смена' name='NightShift' value='Ночная смена'>
                         </div>
                     </div>
                 </div>
-                <label for='exampleInputPassword1'>Shift Pattern</label>
+                <label for='exampleInputPassword1'>Шаблон смены</label>
                 <div class='form-group'>
                     <div class='form-row mb-2'>
                         <div class='col'>
@@ -164,7 +163,7 @@
                     </div>
                 </div>
 
-                <button type='submit' class='btn btn-primary'>Generate</button>
+                <button type='submit' class='btn btn-primary'>Создать</button>
             </form>
         </div>
         <div class='col-sm'>

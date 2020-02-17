@@ -38,14 +38,14 @@ echo 'StartDate,'.'StartTime,'.'Computername,'.'Machinename,'.'Shifttype,'.'Team
 foreach ($period as $dt) {
     $t = current($team);
 
-    echo $dt->format('m/d/Y').','.$startTime.','.','.','.$dayShift.','. $t.','.$command1.'<br>';
+    echo $dt->format('d/m/Y').','.$startTime.','.','.','.$dayShift.','. $t.','.$command1.'<br>';
 	if ($last_index == key($team)) {
 		reset($team);
 	} else {
 		next($team);
 	}
 	$t = current($team);
-    echo $dt->format('m/d/Y').','.$endTime.','.','.','.$nightShift.','. $t.','.$command1.'<br>';
+    echo $dt->format('d/m/Y').','.$endTime.','.','.','.$nightShift.','. $t.','.$command1.'<br>';
     if ($last_index == key($team)) {
 		reset($team);
 	} else {
