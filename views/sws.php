@@ -30,6 +30,9 @@
         <a class="nav-link" href="/?page=sak">Sakuona</a>
     </li>
     <li class="nav-item">
+			<a class="nav-link" href="/?page=sak6">Sakuona 3-Shift</a>
+		</li>
+    <li class="nav-item">
         <a class="nav-link active" href="/?page=sws">Swoods</a>
     </li>
 </ul>
