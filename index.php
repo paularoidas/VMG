@@ -15,7 +15,9 @@ switch ($page) {
 	case 'sak':
 		require ROOT_PATH . '/views/SAK.php';
 		break;
-
+	case 'sak6':
+		require ROOT_PATH . '/views/SAK6.php';
+		break;	
 	case 'sws':
 		require ROOT_PATH . '/views/sws.php';
 		break;		
@@ -28,7 +30,9 @@ switch ($page) {
 	case 'output_sak':
 		require ROOT_PATH . '/outputs/output_sak.php';
 		break;
-
+	case 'output_sak_6':
+		require ROOT_PATH . '/outputs/output_sak_6.php';
+		break;
 	case 'output_sws':
 		require ROOT_PATH . '/outputs/output_sws.php';
 		break;
